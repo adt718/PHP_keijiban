@@ -1,0 +1,160 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+main{
+  max-width: 480px;
+  margin: 0 auto;
+  padding: .5rem;
+}
+
+main .input_wrap{
+  display: flex;
+  flex-direction: column;
+}
+main .input_wrap input,
+main .input_wrap textarea{
+  width: 100%;
+  box-sizing: border-box;
+}
+main .input_wrap textarea{
+  height: 100px;
+}
+main .input_wrap input.title{
+  font-size: 1.5rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+main .input_wrap textarea{
+  border-color: rgba(0,0,0,.8);
+}
+main .input_wrap label + label{
+  margin-top: .5rem;
+}
+main .input_wrap [type="submit"]{
+  border: none;
+  background: rgb(29, 155, 240);
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+}
+main .post_area{
+  margin-top: 2rem;
+}
+main .post_area .post{
+  /*border: 1px solid #000000;*/
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 0 0 6px 0 #c0c0c0;
+}
+main .post_area .post + .post{
+  margin-top: 1rem;
+}
+main .post_area .post .name_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .post_area .post .name_area .delete{
+  background: #da4f49;
+  color: #ffffff;
+  padding: .5rem .8rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+main .post_area .post .name_area + *{
+  margin-top: 1rem;
+}
+main .post_area .post .title{
+  font-size: 1.2rem;
+}
+main .post_area .post .title + *{
+  margin-top: .5rem;
+}
+main .post_area .pageing{
+  display: flex;
+  padding: 1rem 0;
+}
+main .post_area .pageing li:not(:first-of-type){
+  margin-left: .5rem;
+}
+main .post_area .pageing li a{
+  padding: .8rem 1rem;
+  border: 1px solid #000000;
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 50%;
+}
+main .post_area .pageing li a:hover,main .post_area .pageing li a.active{
+  background: rgb(29, 155, 240);
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.flash{
+  padding: .5rem 1rem;
+  margin-bottom: 2rem;
+}
+.success{
+  background: #5bb75b;
+  color: #ffffff;
+}
+.danger{
+  background: #da4f49;
+  color: #ffffff;
+}

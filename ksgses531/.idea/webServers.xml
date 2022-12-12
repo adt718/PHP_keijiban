@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b3fbf9db-bab9-4d92-826c-691e252f06db" name="ksgses531" url="http://unnaemd.work/">
+        <fileTransfer rootFolder="/xs706931.xsrv.jp/public_html/ksgses531" host="sv10493.xserver.jp" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
